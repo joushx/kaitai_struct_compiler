@@ -87,6 +87,8 @@ object Main {
         new HtmlClassCompiler(specs, spec)
       case NimClassCompiler =>
         new NimClassCompiler(specs, spec, config)
+      case WiresharkClassCompiler =>
+        new WiresharkClassCompiler(specs, spec)
       case _ =>
         new ClassCompiler(specs, spec, config, lang)
     }
